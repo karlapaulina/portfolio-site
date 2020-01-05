@@ -1,0 +1,56 @@
+// Structure
+
+$base__space-unit: 1.5rem;
+$solid_border-light: 0.8px solid #b2b8c9;
+$solid_border-dark: 0.8px solid #5a616f;
+$base__font-size: 16px;
+$base__letter-spacing: 2px;
+$base__heading-spacing: 5px;
+
+// Colors
+
+$color__background-body: #fff;
+$color__brand-darkgrey: #4d525f;
+$color__brand-mediumgrey: #5a616f;
+$color__brand-grey: #7e8595;
+$color__brand-lightgrey: #b2b8c9;
+$color__brand-offwhite: #f0f2f6;
+
+$color__link: $color__brand-grey;
+$color__link-visited: $color__brand-darkgrey;
+
+// Typography
+
+@mixin font__main-thin {
+  font-family: "Lato Thin", sans-serif;
+  font-weight: 100;
+}
+
+@mixin font__main-light {
+  font-family: "Lato Light", sans-serif;
+  font-weight: 300;
+}
+
+@mixin font__accent-light {
+  font-family: "Montserrat Medium";
+  font-weight: 300;
+}
+
+@mixin font__accent-medium {
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  font-style: normal;
+}
+
+@mixin font__accent-bold {
+  font-family: "Montserrat Extra Bold";
+  font-weight: 800;
+}
+
+@mixin font__accent-bold-italic {
+  font-family: "Montserrat Extra Bold Italic";
+  font-weight: 800;
+  font-style: italic;
+}
+
+$font__main: "Lato", sans-serif;
