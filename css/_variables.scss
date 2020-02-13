@@ -1,8 +1,8 @@
 // Structure
 
 $base__space-unit: 1.5rem;
-$solid_border-light: 0.8px solid #b2b8c9;
-$solid_border-dark: 0.8px solid #5a616f;
+$solid_border-light: 0.8px solid #cc9550;
+$solid_border-dark: 0.8px solid #333333;
 $base__font-size: 16px;
 $base__letter-spacing: 2px;
 $base__heading-spacing: 5px;
@@ -10,14 +10,14 @@ $base__heading-spacing: 5px;
 // Colors
 
 $color__background-body: #fff;
-$color__brand-darkgrey: #4d525f;
-$color__brand-mediumgrey: #5a616f;
-$color__brand-grey: #7e8595;
-$color__brand-lightgrey: #b2b8c9;
-$color__brand-offwhite: #f0f2f6;
+$color__brand-darkgrey: #333333;
+$color__brand-mediumgrey: #3d3d3d;
+$color__brand-grey: #c1562f;
+$color__brand-lightgrey: #8c4227;
+$color__brand-offwhite: #ffffff;
 
-$color__link: $color__brand-grey;
-$color__link-visited: $color__brand-darkgrey;
+$color__link: $color__brand-darkgrey;
+$color__link-visited: $color__brand-grey;
 
 // Typography
 

@@ -74,7 +74,7 @@ header {
         &:hover,
         &:focus,
         &:active {
-          color: pink;
+          color: #cc9550;
         }
         &:focus {
           outline: thin dotted;
@@ -174,7 +174,7 @@ main {
 .single-project-heading {
   @include font__main-light;
   font-size: $base__font-size * 2;
-  color: $color__brand-mediumgrey;
+  color: $color__brand-darkgrey;
   text-align: center;
   border-bottom: $solid_border-dark;
   padding-bottom: 20px;
@@ -205,9 +205,21 @@ main {
 
 .live-site-preview {
   text-decoration: none;
-  color: $color__brand-lightgrey;
+  color: $color__brand-grey;
   @include font__accent-bold-italic;
   font-size: $base__font-size;
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__brand-darkgrey;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
 }
 
 .dev-projects-backlink {
@@ -337,13 +349,13 @@ main {
   }
 
   .btn:hover {
-    border: $solid_border-light;
-    background: none;
-    color: $color__brand-grey;
+    border: $color__brand-darkgrey;
+    background: $color__brand-darkgrey;
+    color: #cc9550;
   }
 
   .active {
-    color: $color__brand-darkgrey;
+    color: $color__brand-grey;
     border: $solid_border-dark;
   }
 }
@@ -458,8 +470,8 @@ main {
     }
 
     ul {
-      @include font__main-light;
-      color: $color__brand-mediumgrey;
+      font-family: $font__main;
+      color: $color__brand-darkgrey;
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
@@ -486,8 +498,8 @@ main {
     }
 
     ul {
-      @include font__main-light;
-      color: $color__brand-mediumgrey;
+      font-family: $font__main;
+      color: $color__brand-darkgrey;
       display: flex;
       flex-flow: column wrap;
       justify-content: center;
@@ -602,7 +614,7 @@ main {
         width: 90%;
         padding: 10px;
         @include font__accent-bold-italic;
-        background: $color__brand-lightgrey;
+        background: #cc9550;
         color: $color__brand-darkgrey;
         font-size: $base__font-size;
         letter-spacing: $base__letter-spacing;
@@ -611,8 +623,9 @@ main {
         border-radius: 25px;
       }
       button:hover {
-        background: $color__brand-offwhite;
-        color: $color__brand-darkgrey;
+        background: $color__brand-grey;
+        color: #ffffff;
+        border-color: #ffffff;
       }
     }
   }
