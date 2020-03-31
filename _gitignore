@@ -8,13 +8,9 @@ ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
 
-# Mockups
-
-/Mockups
-
 # Editor
 .vscode
 
 # npm
-node_modules
-npm-debug.log
+node_modules/
+npm-debug.log/
