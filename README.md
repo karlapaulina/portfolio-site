@@ -2,7 +2,7 @@
 
 This is a multi-page, responsive portfolio website showcasing Front-End projects and Graphic Design work.
 
-![Image](assets/images/portfolio_screenshot.png)
+![Image](assets/images/portfolioScreenshot.png)
 
 ## Built With
 
@@ -16,9 +16,8 @@ This is a multi-page, responsive portfolio website showcasing Front-End projects
 
 ## Personal learnings
 
-- Working with Animate CSS for the first time
 - Utilizing Javascript to filter out portfolio options
-- Working with Web accessibility resources to ensure colour contrast and legibility were up to web accessiblity standards
+- Working with Web accessibility resources for AA standard goal
 - Working with Mail PHP and SHELL users for the first time
 
 ## Authors
