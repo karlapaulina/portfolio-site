@@ -2,19 +2,87 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,22 +91,35 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
 body {
   line-height: 1; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
   content: none; }
 
 table {
@@ -46,53 +127,60 @@ table {
   border-spacing: 0; }
 
 @font-face {
-  font-family: 'Lato Thin';
+  font-family: "Lato Thin";
   src: url("../../assets/fonts/Lato-Thin.eot");
   src: url("../../assets/fonts/Lato-Thin.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Lato-Thin.woff2") format("woff2"), url("../../assets/fonts/Lato-Thin.woff") format("woff"), url("../../assets/fonts/Lato-Thin.ttf") format("truetype"), url("../../assets/fonts/Lato-Thin.svg#Lato-Thin") format("svg");
   font-weight: 100;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-  font-family: 'Lato';
+  font-family: "Lato";
   src: url("../../assets/fonts/Lato-Regular.eot");
   src: url("../../assets/fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Lato-Regular.woff2") format("woff2"), url("../../assets/fonts/Lato-Regular.woff") format("woff"), url("../../assets/fonts/Lato-Regular.ttf") format("truetype"), url("../../assets/fonts/Lato-Regular.svg#Lato-Regular") format("svg");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-  font-family: 'Lato Light';
+  font-family: "Lato Light";
   src: url("../../assets/fonts/Lato-Light.eot");
   src: url("../../assets/fonts/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Lato-Light.woff2") format("woff2"), url("../../assets/fonts/Lato-Light.woff") format("woff"), url("../../assets/fonts/Lato-Light.ttf") format("truetype"), url("../../assets/fonts/Lato-Light.svg#Lato-Light") format("svg");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-  font-family: 'Montserrat Medium';
+  font-family: "Montserrat Medium";
   src: url("../../assets/fonts/Montserrat-Medium.eot");
   src: url("../../assets/fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat-Medium.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Medium.woff") format("woff"), url("../../assets/fonts/Montserrat-Medium.ttf") format("truetype"), url("../../assets/fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-  font-family: 'Montserrat Light';
+  font-family: "Montserrat Light";
   src: url("../../assets/fonts/Montserrat-Light.eot");
   src: url("../../assets/fonts/Montserrat-Light.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat-Light.woff2") format("woff2"), url("../../assets/fonts/Montserrat-Light.woff") format("woff"), url("../../assets/fonts/Montserrat-Light.ttf") format("truetype"), url("../../assets/fonts/Montserrat-Light.svg#Montserrat-Light") format("svg");
   font-weight: 300;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 @font-face {
-  font-family: 'Montserrat Extra Bold Italic';
+  font-family: "Montserrat Extra Bold Italic";
   src: url("../../assets/fonts/Montserrat-ExtraBoldItalic.eot");
   src: url("../../assets/fonts/Montserrat-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat-ExtraBoldItalic.woff2") format("woff2"), url("../../assets/fonts/Montserrat-ExtraBoldItalic.woff") format("woff"), url("../../assets/fonts/Montserrat-ExtraBoldItalic.ttf") format("truetype"), url("../../assets/fonts/Montserrat-ExtraBoldItalic.svg#Montserrat-ExtraBoldItalic") format("svg");
   font-weight: 800;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 
 @font-face {
-  font-family: 'Montserrat Extra Bold';
+  font-family: "Montserrat Extra Bold";
   src: url("../../assets/fonts/Montserrat-ExtraBold.eot");
   src: url("../../assets/fonts/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/Montserrat-ExtraBold.woff") format("woff"), url("../../assets/fonts/Montserrat-ExtraBold.ttf") format("truetype"), url("../../assets/fonts/Montserrat-ExtraBold.svg#Montserrat-ExtraBold") format("svg");
   font-weight: 800;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 /*!
  * Hamburgers
@@ -124,7 +212,7 @@ table {
   .hamburger.is-active .hamburger-inner,
   .hamburger.is-active .hamburger-inner::before,
   .hamburger.is-active .hamburger-inner::after {
-    background-color: #ffffff; }
+    background-color: #000; }
 
 .hamburger-box {
   width: 40px;
@@ -139,7 +227,7 @@ table {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 40px;
     height: 4px;
-    background-color: #ffffff;
+    background-color: #000;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
@@ -187,7 +275,9 @@ table {
 body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  background: #1f1f1f;
+  color: #ffffff; }
 
 /* HEADER */
 header {
@@ -196,39 +286,45 @@ header {
   position: fixed;
   z-index: 1;
   top: 0px;
-  background: #333333; }
+  background: #ffffff;
+  box-shadow: 0px 3px 10px #000; }
   header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 8vh;
-    padding: 10px 15px;
+    height: 90px;
+    padding: 0 15px;
     width: 100%; }
     header nav .kg-logo {
       display: flex;
       justify-content: flex-start;
       align-items: center;
-      width: 50%; }
+      width: 50%;
+      height: 100%;
+      z-index: 2; }
+      header nav .kg-logo:focus {
+        color: red; }
       header nav .kg-logo .logo img {
-        width: 40%;
+        width: 75px;
         height: auto; }
     header nav .nav-links {
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
       position: absolute;
       right: 0px;
-      height: 92vh;
+      height: 100vh;
       top: 8vh;
       z-index: 1;
-      width: 50%;
+      width: 100%;
       transform: translateX(100%);
       transition: transform 0.5s ease-in;
-      background-color: #333333; }
+      background-color: #ffffff;
+      overflow-y: scroll; }
       header nav .nav-links .link-item a {
         text-decoration: none;
-        color: #ffffff;
+        color: #c1562f;
         font-family: "Montserrat Medium";
         font-weight: 300;
         font-size: 16px;
@@ -236,14 +332,14 @@ header {
         letter-spacing: 2px;
         cursor: pointer; }
         header nav .nav-links .link-item a:hover, header nav .nav-links .link-item a:focus, header nav .nav-links .link-item a:active {
-          color: #cc9550; }
-        header nav .nav-links .link-item a:focus {
-          outline: thin dotted; }
-        header nav .nav-links .link-item a:hover, header nav .nav-links .link-item a:active {
-          outline: 0; }
+          color: #1f1f1f; }
     header nav .burger {
       display: block;
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative;
+      z-index: 2; }
+      header nav .burger span:hover, header nav .burger span:focus {
+        color: #c1562f; }
     header nav .nav-active {
       transform: translateX(0%); }
 
@@ -252,389 +348,243 @@ main {
   width: 90%;
   margin: 120px auto 0px; }
 
-/* DEVELOPER GRID */
-.homeTitle {
-  font-family: "Montserrat Extra Bold Italic";
-  font-weight: 800;
-  font-style: italic;
-  font-size: 48px;
-  letter-spacing: 2px;
-  color: #c1562f;
-  text-align: center;
-  margin-bottom: 40px; }
-
-.dev-portfolio {
-  display: grid;
-  grid-row-gap: 20px; }
-  .dev-portfolio .middle {
-    transition: none;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.75);
-    width: 100%; }
-  .dev-portfolio .dev-portfolio-first-item,
-  .dev-portfolio .dev-portfolio-second-item,
-  .dev-portfolio .dev-portfolio-third-item,
-  .dev-portfolio .dev-portfolio-fourth-item,
-  .dev-portfolio .dev-portfolio-fifth-item,
-  .dev-portfolio .dev-portfolio-sixth-item {
-    position: relative; }
-  .dev-portfolio .dev-portfolio-first-item a img,
-  .dev-portfolio .dev-portfolio-second-item a img,
-  .dev-portfolio .dev-portfolio-third-item a img,
-  .dev-portfolio .dev-portfolio-fourth-item a img,
-  .dev-portfolio .dev-portfolio-fifth-item a img,
-  .dev-portfolio .dev-portfolio-sixth-item a img {
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: none;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden; }
-  .dev-portfolio .dev-portfolio-item-title {
-    font-family: "Montserrat Extra Bold Italic";
-    font-weight: 800;
-    font-style: italic;
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #333333;
-    line-height: 25px;
-    padding: 20px 5px; }
-  .dev-portfolio figure a img {
-    width: 100%; }
-
-/* INDIVIDUAL DEV PROJECTS */
-.single-project-heading {
-  font-family: "Lato Light", sans-serif;
-  font-weight: 300;
-  font-size: 32px;
-  color: #333333;
-  text-align: center;
-  border-bottom: 0.8px solid #333333;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  width: 100%; }
-
-.single-dev-project {
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 15px;
-  justify-items: center;
-  margin-bottom: 40px;
-  width: 100%; }
-  .single-dev-project img {
-    width: 100%; }
-
-.project-description {
-  font-family: "Lato", sans-serif;
-  font-size: 16px;
-  color: #333333;
-  line-height: 20px;
-  width: 100%; }
-
-.live-site-preview {
-  text-decoration: none;
-  color: #c1562f;
-  font-family: "Montserrat Extra Bold Italic";
-  font-weight: 800;
-  font-style: italic;
-  font-size: 16px; }
-  .live-site-preview:hover, .live-site-preview:focus, .live-site-preview:active {
-    color: #333333; }
-  .live-site-preview:focus {
-    outline: thin dotted; }
-  .live-site-preview:hover, .live-site-preview:active {
-    outline: 0; }
-
-.dev-projects-backlink {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 75%;
-  margin: 0px auto; }
-  .dev-projects-backlink .fa-arrow-alt-circle-left {
-    font-size: 32px; }
-  .dev-projects-backlink a {
-    font-family: "Montserrat Extra Bold Italic";
-    font-weight: 800;
-    font-style: italic;
-    color: #c1562f;
-    text-decoration: none;
-    font-size: 20px; }
-    .dev-projects-backlink a:hover {
-      color: #333333; }
-
-/* DESIGN PORTFOLIO */
-.designTitle {
-  font-family: "Montserrat Extra Bold Italic";
-  font-weight: 800;
-  font-style: italic;
-  font-size: 48px;
-  letter-spacing: 2px;
-  color: #c1562f;
-  text-align: center;
-  margin-bottom: 40px; }
-
-.design-portfolio {
-  display: grid;
-  grid-row-gap: 30px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-  /* DESIGN PORTFOLIO MENU LINKS */ }
-  .design-portfolio .middle {
-    transition: none;
-    opacity: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.75);
-    width: 100%; }
-  .design-portfolio .web {
-    width: 100%;
-    margin: 0 auto; }
-    .design-portfolio .web img {
-      width: 100%; }
-  .design-portfolio .print {
-    width: 100%;
-    margin: 0 auto;
-    position: relative; }
-    .design-portfolio .print img {
-      width: 100%; }
-  .design-portfolio .product-photo-vid {
-    width: 100%;
-    margin: 0 auto;
-    position: relative; }
-    .design-portfolio .product-photo-vid img {
-      width: 100%; }
-  .design-portfolio .design-portfolio-item {
-    position: relative; }
-  .design-portfolio .design-portfolio-item img {
-    opacity: 1;
-    display: block;
-    height: auto;
-    transition: 0.5s ease;
-    -webkit-backface-visibility: hidden;
-            backface-visibility: hidden; }
-  .design-portfolio .design-portfolio-item:hover .middle {
-    opacity: 1;
-    z-index: 1; }
-  .design-portfolio .design-portfolio-item-title {
-    font-family: "Montserrat Extra Bold Italic";
-    font-weight: 800;
-    font-style: italic;
-    font-size: 24px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #333333;
-    line-height: 25px;
-    padding: 20px 5px; }
-  .design-portfolio #myBtnContainer {
-    display: flex;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto; }
-  .design-portfolio .btn {
-    font-size: 16px;
-    color: #333333;
-    background: none;
-    border: none;
-    outline: none;
-    padding: 12px 16px;
-    cursor: pointer; }
-  .design-portfolio .btn:hover {
-    border: #333333;
-    background: #333333;
-    color: #cc9550; }
-  .design-portfolio .active {
-    color: #c1562f;
-    border: 0.8px solid #333333; }
-
-/* INDIVIDUAL DESIGN PROJECTS */
-.single-design-project {
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 15px;
-  justify-items: center;
-  margin-bottom: 40px;
-  width: 100%; }
-  .single-design-project img {
-    width: 100%; }
-
-.product-youtube-videos {
-  width: 100%;
-  height: auto;
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%; }
-  .product-youtube-videos iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0; }
-
-.design-projects-backlink {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 75%;
-  margin: 0px auto; }
-  .design-projects-backlink .fa-arrow-alt-circle-left {
-    font-size: 32px; }
-  .design-projects-backlink a {
-    font-family: "Montserrat Extra Bold Italic";
-    font-weight: 800;
-    font-style: italic;
-    color: #c1562f;
-    text-decoration: none;
-    font-size: 20px; }
-    .design-projects-backlink a:hover {
-      color: #333333; }
-
 /* ABOUT PAGE */
-.aboutTitle {
-  font-family: "Montserrat Extra Bold Italic";
-  font-weight: 800;
-  font-style: italic;
-  font-size: 48px;
-  letter-spacing: 2px;
-  color: #c1562f;
-  text-align: center;
-  margin-bottom: 40px; }
-
 .about-me {
   display: grid;
-  grid-auto-rows: auto;
+  grid-template-rows: auto;
   grid-row-gap: 20px;
+  grid-template-columns: 100%;
   width: 100%; }
   .about-me .about-me-photo {
-    grid-row: 1 / 2;
-    width: 100%;
-    text-align: center; }
+    width: inherit;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px 50px 1fr 50px 100px 50px; }
     .about-me .about-me-photo img {
-      width: 80%;
+      width: 100%;
       height: auto;
-      border-radius: 50%; }
+      grid-row: 1 / 6;
+      grid-column: 1 / 6;
+      order: 2; }
+    .about-me .about-me-photo .photoBackground {
+      order: 1;
+      grid-row: 2 / 7;
+      grid-column: 2 / 7;
+      background: #d16842; }
+    .about-me .about-me-photo h1 {
+      grid-row: 5 / 7;
+      grid-column: 3 / 7;
+      font-family: "Montserrat Extra Bold";
+      font-weight: 800;
+      font-size: 2em;
+      color: #ffffff;
+      justify-self: center;
+      align-self: center;
+      order: 3;
+      line-height: 35px;
+      text-shadow: 2px 2px #1f1f1f; }
   .about-me .bio {
-    grid-row: 2 / 3;
     font-family: "Lato", sans-serif;
-    color: #333333;
     font-size: 16px;
-    width: 100%;
-    line-height: 25px; }
+    width: inherit;
+    line-height: 20px; }
   .about-me .skills {
-    grid-row: 3 / 4;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 410px;
     width: 100%;
-    height: 340px;
-    text-align: center;
     font-size: 16px;
     line-height: 25px; }
-    .about-me .skills h3 {
+    .about-me .skills h2 {
       font-family: "Montserrat Medium";
       font-weight: 500;
       font-style: normal;
-      color: #c1562f;
-      font-size: 24px;
+      color: #d0a062;
+      font-size: 1rem;
       text-transform: uppercase;
-      letter-spacing: 2.5px; }
+      letter-spacing: 2px; }
     .about-me .skills ul {
       font-family: "Lato", sans-serif;
-      color: #333333;
       display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      letter-spacing: 2px; }
+      flex-direction: column; }
   .about-me .interests {
-    grid-row: 4 / 5;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: space-around;
     height: 200px;
-    text-align: center;
+    width: 100%;
     font-size: 16px;
     line-height: 25px; }
-    .about-me .interests h3 {
+    .about-me .interests h2 {
       font-family: "Montserrat Medium";
       font-weight: 500;
       font-style: normal;
-      color: #c1562f;
-      font-size: 20px;
+      color: #d0a062;
+      font-size: 1rem;
       letter-spacing: 2px;
       text-transform: uppercase; }
     .about-me .interests ul {
       font-family: "Lato", sans-serif;
-      color: #333333;
       display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      letter-spacing: 2px; }
+      flex-direction: column; }
 
-/* CONTACT PAGE */
-.contactTitle {
-  font-family: "Montserrat Extra Bold Italic";
+/* PORTFOLIO GRID */
+.page-title {
+  font-family: "Montserrat Extra Bold";
   font-weight: 800;
-  font-style: italic;
-  font-size: 48px;
+  font-size: 2rem;
   letter-spacing: 2px;
-  color: #c1562f;
+  color: #d0a062;
   text-align: center;
   margin-bottom: 40px; }
 
-.get-in-touch {
+/* DESIGN PORTFOLIO MENU LINKS */
+#myBtnContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin: 30px auto; }
+  #myBtnContainer .btn {
+    font-size: 16px;
+    color: #1f1f1f;
+    background: #ffffff;
+    border: none;
+    padding: 12px 15px;
+    cursor: pointer; }
+    #myBtnContainer .btn:hover, #myBtnContainer .btn:focus {
+      border: 1px solid #fff;
+      background: #d16842;
+      color: #1f1f1f; }
+  #myBtnContainer .active {
+    color: #1f1f1f;
+    background: #d0a062;
+    border: 1px solid #8c4227; }
+
+/* END OF DESIGN PORTFOLIO MENU LINKS */
+.portfolio {
+  display: grid;
+  grid-row-gap: 30px; }
+  .portfolio a {
+    text-decoration: none; }
+  .portfolio .portfolio-item {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr) 50px;
+    grid-template-rows: 20px repeat(2, 1fr) 50px 30px 20px; }
+    .portfolio .portfolio-item .portfolio-mockup {
+      width: 100%;
+      grid-row: 1 / 5;
+      grid-column: 1 / 8;
+      order: 2; }
+    .portfolio .portfolio-item .portfolio-item-title {
+      grid-row: 5 / 7;
+      grid-column: 2 / 9;
+      order: 3;
+      align-self: center;
+      justify-self: center;
+      font-family: "Montserrat Extra Bold";
+      font-weight: 800;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      color: #000000;
+      letter-spacing: 1px; }
+    .portfolio .portfolio-item .portfolio-item-background {
+      background: #d0a062;
+      grid-row: 2 / 7;
+      grid-column: 2 / 9;
+      order: 1; }
+
+/* INDIVIDUAL PROJECT PAGES */
+.project-page-title {
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2rem;
+  color: #d16842;
+  text-align: center;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  width: 100%; }
+
+.project-details {
   display: grid;
   grid-template-rows: auto;
-  grid-row-gap: 20px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
-  .get-in-touch .contactInfo {
-    display: flex;
-    align-content: space-around;
-    flex-flow: column wrap; }
-    .get-in-touch .contactInfo img {
-      width: 30%;
-      margin: 0px auto 10px; }
-    .get-in-touch .contactInfo .contact-inquiry {
-      font-family: "Montserrat Medium";
-      font-weight: 500;
-      font-style: normal;
-      font-size: 19.2px;
-      text-align: center;
-      line-height: 25px;
-      color: #333333; }
-  .get-in-touch img {
+  grid-row-gap: 15px;
+  justify-items: center;
+  margin-bottom: 40px;
+  width: 100%; }
+  .project-details img {
+    max-width: 100%; }
+  .project-details .product-youtube-videos {
     width: 100%;
-    margin: 0px auto; }
-  .get-in-touch .contact-wrap {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; }
+    .project-details .product-youtube-videos iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0; }
+  .project-details .project-description {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 20px;
+    width: 100%; }
+
+.project-live-site-preview {
+  text-decoration: none;
+  color: #d0a062;
+  font-family: "Montserrat Extra Bold Italic";
+  font-weight: 800;
+  font-style: italic;
+  font-size: 16px; }
+  .project-live-site-preview:hover, .project-live-site-preview:focus, .project-live-site-preview:active {
+    color: #8a8a8a; }
+
+.view-all-projects {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .view-all-projects .fa-arrow-alt-circle-left {
+    font-size: 32px; }
+  .view-all-projects a {
+    font-family: "Montserrat Extra Bold Italic";
+    font-weight: 800;
+    font-style: italic;
+    color: #d0a062;
+    text-decoration: none;
+    font-size: 20px; }
+    .view-all-projects a:hover, .view-all-projects a:focus {
+      color: #8a8a8a; }
+
+/* CONTACT PAGE */
+.contact-page {
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  grid-template-columns: 100%; }
+  .contact-page .form-container {
+    grid-row: 1 / 2;
     width: 100%;
     font-family: "Montserrat Medium";
     font-weight: 500;
     font-style: normal;
-    color: #ffffff;
-    background: #333333;
-    border: 0.8px solid #333333;
+    color: #c1562f;
+    background: #ffffff;
+    border: 1px solid #fff;
     border-radius: 25px;
-    text-transform: uppercase;
-    letter-spacing: 2px; }
-    .get-in-touch .contact-wrap .invalidInput {
+    text-transform: uppercase; }
+    .contact-page .form-container .invalidInput {
       background: red; }
-    .get-in-touch .contact-wrap #contact-form {
+    .contact-page .form-container #contact-form {
       display: grid;
       grid-row-gap: 15px;
       margin: 30px 0;
@@ -642,116 +592,124 @@ main {
       margin-left: auto;
       margin-right: auto;
       justify-items: center; }
-      .get-in-touch .contact-wrap #contact-form #name {
+      .contact-page .form-container #contact-form #name {
         width: 90%;
         height: 40px;
         padding: 10px;
         font-family: "Lato", sans-serif;
-        color: #333333;
+        color: #1f1f1f;
         font-size: 16px;
         background: #ffffff;
-        border: 0.8px solid #cc9550;
+        border: 1px solid #8c4227;
         border-radius: 25px; }
-      .get-in-touch .contact-wrap #contact-form #email {
+      .contact-page .form-container #contact-form #email {
         width: 90%;
         height: 40px;
         padding: 10px;
-        color: #333333;
+        color: #1f1f1f;
         font-size: 16px;
         font-family: "Lato", sans-serif;
         background: #ffffff;
-        border: 0.8px solid #cc9550;
+        border: 1px solid #8c4227;
         border-radius: 25px; }
-      .get-in-touch .contact-wrap #contact-form #message {
+      .contact-page .form-container #contact-form #message {
         width: 90%;
         height: 150px;
         resize: none;
         padding: 10px;
         font-family: "Lato", sans-serif;
         font-size: 16px;
-        color: #333333;
+        color: #1f1f1f;
         background: #ffffff;
-        border: 0.8px solid #cc9550;
-        border-radius: 15px; }
-      .get-in-touch .contact-wrap #contact-form button {
+        border: 1px solid #8c4227;
+        border-radius: 15px;
+        overflow-y: scroll; }
+      .contact-page .form-container #contact-form button {
         width: 90%;
         padding: 10px;
         font-family: "Montserrat Extra Bold Italic";
         font-weight: 800;
         font-style: italic;
-        background: #cc9550;
-        color: #333333;
+        background: #d0a062;
+        color: #1f1f1f;
         font-size: 16px;
         letter-spacing: 2px;
         text-transform: uppercase;
-        border: 0.8px solid #cc9550;
-        border-radius: 25px; }
-      .get-in-touch .contact-wrap #contact-form button:hover {
-        background: #c1562f;
-        color: #ffffff;
-        border-color: #ffffff; }
-
-.form-success {
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 20px;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto; }
-  .form-success .success-msg {
-    display: grid;
-    grid-row-gap: 5px; }
-    .form-success .success-msg p {
-      font-family: "Lato Light", sans-serif;
-      font-weight: 300;
-      font-size: 24px;
+        border: 1px solid #8c4227;
+        border-radius: 25px;
+        cursor: pointer; }
+        .contact-page .form-container #contact-form button:hover, .contact-page .form-container #contact-form button:focus {
+          background: #1f1f1f;
+          color: #ffffff;
+          border-color: #ffffff; }
+  .contact-page .email-and-logo {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column; }
+    .contact-page .email-and-logo p {
+      font-family: "Montserrat Medium";
+      font-weight: 500;
+      font-style: normal;
+      font-size: 16px;
       text-align: center;
       line-height: 25px;
-      color: #333333; }
-  .form-success .direct-to-portfolio {
-    display: grid;
-    grid-row-gap: 10px; }
-    .form-success .direct-to-portfolio img {
-      width: 30%;
-      margin: 0px auto 10px; }
-    .form-success .direct-to-portfolio a {
-      width: 100%;
-      margin: 0 auto;
-      padding: 15px 10px;
-      font-family: "Montserrat Extra Bold Italic";
-      font-weight: 800;
-      font-style: italic;
-      background: #8c4227;
-      color: #333333;
-      font-size: 16px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      border: 0.8px solid #cc9550;
-      border-radius: 25px;
-      text-decoration: none;
-      text-align: center; }
-    .form-success .direct-to-portfolio a:hover {
-      background-color: #333333;
       color: #ffffff; }
+  .contact-page img {
+    display: none; }
+
+.unique-page {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 20px; }
+  .unique-page p {
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff; }
+  .unique-page .redirect {
+    width: 50%;
+    margin: 0 auto;
+    text-decoration: none;
+    padding: 15px 10px;
+    font-family: "Montserrat Extra Bold Italic";
+    font-weight: 800;
+    font-style: italic;
+    background: #d0a062;
+    color: #1f1f1f;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer; }
+    .unique-page .redirect:hover, .unique-page .redirect:focus {
+      background-color: #d16842;
+      color: #1f1f1f; }
 
 /* FOOTER */
 footer {
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 5px;
-  margin: 50px auto 20px;
-  width: 90%; }
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: 30px auto;
+  padding: 20px 0;
+  border-top: 1px solid #fff;
+  flex-direction: column;
+  justify-content: space-between; }
   footer .contact-info {
     display: flex;
-    flex-flow: column wrap;
-    align-content: center; }
-    footer .contact-info .social-icons {
-      text-align: center;
-      font-size: 24px; }
-      footer .contact-info .social-icons a {
-        color: #c1562f; }
-        footer .contact-info .social-icons a:hover {
-          color: #333333; }
+    flex-direction: column; }
+    footer .contact-info .social-media-icons {
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 2rem; }
+      footer .contact-info .social-media-icons .fa-linkedin-in,
+      footer .contact-info .social-media-icons .fa-github {
+        color: #ffffff; }
+        footer .contact-info .social-media-icons .fa-linkedin-in:hover, footer .contact-info .social-media-icons .fa-linkedin-in:focus,
+        footer .contact-info .social-media-icons .fa-github:hover,
+        footer .contact-info .social-media-icons .fa-github:focus {
+          color: #d0a062; }
     footer .contact-info p {
       font-family: "Montserrat Medium";
       font-weight: 500;
@@ -759,338 +717,182 @@ footer {
       font-size: 16px;
       text-align: center;
       line-height: 25px;
-      color: #c1562f; }
-  footer .madeBy {
+      color: #d0a062; }
+  footer .copyright {
     font-family: "Montserrat Medium";
     font-weight: 500;
     font-style: normal;
-    color: #8c4227;
+    color: #ffffff;
     font-size: 16px;
     text-align: center; }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (min-width: 600px) {
+  .about-me .about-me-photo {
+    grid-template-columns: repeat(3, 1fr) 150px 175px 1fr;
+    grid-template-rows: 50px repeat(3, 1fr) 100px 50px; }
+    .about-me .about-me-photo h1 {
+      grid-column: 4 / 7; }
+  .about-me .skills {
+    justify-content: space-evenly;
+    height: 325px; }
+    .about-me .skills ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      line-height: normal; }
+  .about-me .interests {
+    justify-content: space-around;
+    height: 180px; }
+    .about-me .interests ul {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+      grid-gap: 10px;
+      line-height: normal; }
+  /* DESIGN PORTFOLIO MENU LINKS */
+  #myBtnContainer {
+    justify-content: space-evenly; }
+    #myBtnContainer .btn {
+      padding: 12px 28px; }
+  /* END OF DESIGN PORTFOLIO MENU LINKS */
+  .portfolio {
+    grid-row-gap: 40px; }
+  /* CONTACT PAGE */
+  .contact-page .form-container {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto; }
+    .contact-page .form-container #contact-form button {
+      width: 70%; } }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (min-width: 900px) {
   /* HEADER */
-  header nav {
-    justify-content: space-between;
-    align-items: center; }
-    header nav .kg-logo {
-      width: 30%; }
+  header {
+    box-shadow: none; }
     header nav .nav-links {
-      justify-content: space-evenly;
       flex-direction: row;
       position: relative;
+      flex-wrap: column wrap;
       right: auto;
       height: auto;
       top: 0px;
-      width: 70%;
       transform: none;
       transition: none;
-      background-color: transparent; }
+      background-color: transparent;
+      overflow-y: hidden;
+      z-index: 0; }
     header nav .burger {
       display: none; }
     header nav .nav-active {
       transform: none; }
-  /* MAIN GRID */
-  .dev-portfolio {
-    display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto; }
-    .dev-portfolio .dev-portfolio-first-item {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3; }
-    .dev-portfolio .dev-portfolio-second-item {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3; }
-    .dev-portfolio .dev-portfolio-third-item {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4; }
-    .dev-portfolio .dev-portfolio-fourth-item {
-      grid-column: 2/ 3;
-      grid-row: 3 / 4; }
-    .dev-portfolio .dev-portfolio-fifth-item {
-      grid-column: 1 / 2;
-      grid-row: 4 / 5; }
-    .dev-portfolio .dev-portfolio-sixth-item {
-      grid-column: 2 / 3;
-      grid-row: 4 / 5; }
-  /* DESIGN PORTFOLIO */
-  .design-portfolio {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto; }
-    .design-portfolio #myBtnContainer {
-      grid-column: 1 / 3;
-      grid-row: 1 / 2; }
-    .design-portfolio :nth-child(2) {
-      grid-column: 1 / 2;
-      grid-row: 2 / 3; }
-    .design-portfolio :nth-child(3) {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3; }
-    .design-portfolio :nth-child(4) {
-      grid-column: 1 / 2;
-      grid-row: 3 / 4; }
-    .design-portfolio :nth-child(5) {
-      grid-column: 2 / 3;
-      grid-row: 3 / 4; }
-    .design-portfolio :nth-child(6) {
-      grid-column: 1 / 2;
-      grid-row: 4 / 5; }
-    .design-portfolio :nth-child(7) {
-      grid-column: 2 / 3;
-      grid-row: 4 / 5; }
-    .design-portfolio :nth-child(8) {
-      grid-column: 1 / 2;
-      grid-row: 5 / 6; }
-    .design-portfolio :nth-child(9) {
-      grid-column: 2 / 3;
-      grid-row: 5 / 6; }
-    .design-portfolio :nth-child(10) {
-      grid-column: 1 / 2;
-      grid-row: 6 / 7; }
-    .design-portfolio :nth-child(11) {
-      grid-column: 2 / 3;
-      grid-row: 6 / 7; }
-    .design-portfolio :nth-child(12) {
-      grid-column: 1 / 2;
-      grid-row: 7 / 8; }
   /* ABOUT PAGE */
-  .aboutTitle {
-    font-size: 56px; }
   .about-me {
-    grid-row-gap: 20px; }
-    .about-me .about-me-photo img {
-      width: 50%;
-      height: auto;
-      border-radius: 50%; }
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 125px 25px;
+    grid-column-gap: 50px;
+    grid-row-gap: 40px; }
+    .about-me .about-me-photo {
+      align-self: center;
+      grid-column: 1 / 2;
+      grid-row: 1 / 5;
+      grid-template-columns: 50px repeat(3, 1fr) 50px;
+      grid-template-rows: 50px repeat(4, 1fr) 50px; }
+      .about-me .about-me-photo img {
+        grid-row: 1 / 6;
+        grid-column: 1 / 5; }
+      .about-me .about-me-photo .photoBackground {
+        grid-row: 2 / 7;
+        grid-column: 2 / 7; }
+      .about-me .about-me-photo h1 {
+        grid-row: 4 / 7;
+        grid-column: 3 / 7; }
     .about-me .bio {
-      width: 75%;
-      margin: auto; }
+      grid-column: 2 / 3;
+      grid-row: 1 / 2; }
     .about-me .skills {
-      flex-flow: column nowrap;
-      height: 290px; }
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      justify-content: space-between;
+      height: 250px; }
       .about-me .skills ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-column-gap: 30px; }
+        grid-gap: 5px; }
     .about-me .interests {
-      flex-flow: column nowrap;
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      justify-content: space-between;
       height: 150px; }
       .about-me .interests ul {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-column-gap: 30px; }
-  /* CONTACT PAGE */
-  .get-in-touch {
+        grid-gap: 5px; }
+  /* DESIGN PORTFOLIO MENU LINKS */
+  #myBtnContainer .btn {
+    padding: 12px 40px; }
+  /* END OF DESIGN PORTFOLIO MENU LINKS */
+  .portfolio {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 20px; }
-    .get-in-touch .contactInfo {
-      grid-column: 2 / 3;
-      grid-row: 1 / 4;
-      align-content: center;
-      justify-content: center; }
-      .get-in-touch .contactInfo img {
-        width: 50%; }
-    .get-in-touch .contactHalfPageImage {
+    grid-row-gap: 30px;
+    grid-column-gap: 50px; }
+  /* CONTACT PAGE */
+  .contact-page {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px; }
+    .contact-page .form-container {
       grid-column: 1 / 2;
-      grid-row: 1 / 4; }
-  .form-success .direct-to-portfolio a {
-    width: 50%; } }
+      grid-row: 1 / 2;
+      width: 100%; }
+    .contact-page .email-and-logo {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-items: center; }
+    .contact-page img {
+      display: initial;
+      width: 50%; }
+  .unique-page .redirect {
+    width: 300px;
+    padding: 15px 10px; }
+  footer {
+    margin: 50px auto 20px auto;
+    flex-direction: row; }
+    footer .contact-info {
+      flex-direction: row;
+      align-items: center; }
+    footer .social-media-icons {
+      padding-right: 10px; }
+      footer .social-media-icons .fa-linkedin-in,
+      footer .social-media-icons .fa-github {
+        padding-right: 20px; } }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (min-width: 1240px) {
-  /* HEADER */
-  header nav .kg-logo {
-    width: 25%; }
-  header nav .nav-links {
-    width: 40%; }
-  .dev-portfolio {
-    grid-template-rows: auto; }
-    .dev-portfolio .middle {
-      transition: 0.5s ease;
-      opacity: 0;
-      background-color: transparent; }
-    .dev-portfolio .dev-portfolio-first-item a img,
-    .dev-portfolio .dev-portfolio-second-item a img,
-    .dev-portfolio .dev-portfolio-third-item a img,
-    .dev-portfolio .dev-portfolio-fourth-item a img,
-    .dev-portfolio .dev-portfolio-fifth-item a img,
-    .dev-portfolio .dev-portfolio-sixth-item a img {
-      transition: 0.5s ease; }
-    .dev-portfolio .dev-portfolio-first-item:hover a img,
-    .dev-portfolio .dev-portfolio-second-item:hover a img,
-    .dev-portfolio .dev-portfolio-third-item:hover a img,
-    .dev-portfolio .dev-portfolio-fourth-item:hover a img,
-    .dev-portfolio .dev-portfolio-fifth-item:hover a img,
-    .dev-portfolio .dev-portfolio-sixth-item:hover a img {
-      opacity: 0.3; }
-    .dev-portfolio .dev-portfolio-first-item:hover .middle,
-    .dev-portfolio .dev-portfolio-second-item:hover .middle,
-    .dev-portfolio .dev-portfolio-third-item:hover .middle,
-    .dev-portfolio .dev-portfolio-fourth-item:hover .middle,
-    .dev-portfolio .dev-portfolio-fifth-item:hover .middle,
-    .dev-portfolio .dev-portfolio-sixth-item:hover .middle {
-      opacity: 1; }
-    .dev-portfolio .design-portfolio-item:hover img {
-      opacity: 0.3; }
-    .dev-portfolio .dev-portfolio-item-title {
-      font-family: "Montserrat Extra Bold Italic";
-      font-weight: 800;
-      font-style: italic;
-      font-size: 32px;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: #333333;
-      line-height: 40px; }
-  /* INDIVIDUAL DEV PROJECTS */
-  .single-project-heading {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
-  .project-description {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
-  .single-dev-project {
-    display: grid;
-    grid-template-rows: auto;
-    grid-row-gap: 15px;
-    justify-items: center;
-    margin-bottom: 40px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
-    .single-dev-project img {
-      width: 80%; }
-  .dev-projects-backlink {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    width: 25%;
-    margin: 0px auto; }
-    .dev-projects-backlink a {
-      font-family: "Montserrat Extra Bold Italic";
-      font-weight: 800;
-      font-style: italic;
-      color: #c1562f;
-      text-decoration: none; }
-      .dev-projects-backlink a:hover {
-        color: #333333; }
-  /*DESIGN PORTFOLIO*/
-  .design-portfolio .middle {
-    transition: 0.5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: transparent; }
-  .design-portfolio .design-portfolio-item:hover img {
-    opacity: 0.3; }
-  .design-portfolio .design-portfolio-item-title {
-    font-family: "Montserrat Extra Bold Italic";
-    font-weight: 800;
-    font-style: italic;
-    font-size: 32px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #333333;
-    line-height: 40px; }
-  /* INDIVIDUAL DESIGN PROJECTS */
-  .single-design-project {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto; }
-    .single-design-project img {
-      width: 80%; }
-  .design-projects-backlink {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-content: flex-start;
-    width: 25%;
-    margin: 0px auto; }
-    .design-projects-backlink a {
-      font-family: "Montserrat Extra Bold Italic";
-      font-weight: 800;
-      font-style: italic;
-      color: #c1562f;
-      text-decoration: none;
-      font-size: 20px; }
-      .design-projects-backlink a:hover {
-        color: #333333; }
-  /* ABOUT PAGE */
-  .about-me {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 36% 32% 32%;
-    grid-column-gap: 5%; }
-    .about-me .about-me-photo {
-      grid-column: 1 / 2;
-      grid-row: 1 / 4; }
-      .about-me .about-me-photo img {
-        width: 75%;
-        height: auto; }
-    .about-me .bio {
-      grid-column: 2 /3;
-      grid-row: 1 / 2;
-      width: 90%; }
-    .about-me .skills {
-      grid-column: 2 /3;
-      grid-row: 2/ 3;
-      height: 245px; }
-    .about-me .interests {
-      grid-column: 2 / 3;
-      grid-row: 3/ 4;
-      height: 150px; }
-  /* CONTACT PAGE */
-  .get-in-touch {
-    grid-gap: 5px; }
-    .get-in-touch .contactInfo {
-      grid-column: 2 / 3;
-      grid-row: 1 / 4;
-      align-content: center;
-      justify-content: center; }
-    .get-in-touch .contactHalfPageImage {
-      grid-column: 1 / 2;
-      grid-row: 1 / 4; }
-      .get-in-touch .contactHalfPageImage img {
-        width: 90%; }
-  .form-success .direct-to-portfolio img {
-    width: 20%; }
-  .form-success .direct-to-portfolio a {
-    width: 25%; }
-  /* FOOTER */
+  main {
+    width: 1240px; }
+  .about-me,
+  .portfolio,
+  .view-all-projects,
+  .contact-page,
+  .unique-page {
+    width: 95%;
+    margin: 0 auto; }
+  .project-page-title {
+    width: 95%;
+    margin: 0 auto 20px auto; }
+  .project-details {
+    grid-gap: 30px;
+    width: 95%;
+    margin: 0 auto 40px auto; }
+    .project-details .project-description,
+    .project-details .project-live-site-preview {
+      grid-column: 1 / 3;
+      justify-self: center; }
+    .project-details .singleImage {
+      grid-column: 1 / 3;
+      justify-self: center; }
+    .project-details .singleVideo {
+      grid-column: 1 / 3;
+      justify-self: center; }
   footer {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    flex-flow: wrap;
-    margin: 50px auto 20px;
-    width: 90%; }
-    footer .contact-info {
-      display: flex;
-      flex-flow: row nowrap;
-      justify-content: space-evenly;
-      width: 375px; }
-      footer .contact-info .social-icons {
-        text-align: center;
-        font-size: 24px; }
-      footer .contact-info p {
-        font-family: "Montserrat Medium";
-        font-weight: 500;
-        font-style: normal;
-        font-size: 16px;
-        text-align: center;
-        line-height: 25px; } }
+    width: 1190px; } }

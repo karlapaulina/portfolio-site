@@ -18,10 +18,6 @@
     <link href="./build/css/style.min.css" type="text/css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
@@ -31,23 +27,27 @@
   <body>
     <header>
       <nav>
-        <div class="kg-logo">
+        <div class="kg-logo" role="link" tabindex="0">
           <a href="index.html" class="logo"
             ><img
-              src="assets/images/kg_logo_dark.svg"
-              alt="Karla Gonzalez Icon Logo"
+              src="assets/images/kg_logo_light.svg"
+              alt="Karla Gonzalez Monogram Logo"
           /></a>
         </div>
         <ul class="nav-links">
           <li class="link-item">
             <a href="https://github.com/karlapaulina">github</a>
           </li>
-          <li class="link-item"><a href="work.html">design</a></li>
-          <li class="link-item"><a href="about.html">about</a></li>
+          <li class="link-item"><a href="devWork.html">dev work</a></li>
+          <li class="link-item"><a href="designWork.html">design work</a></li>
           <li class="link-item"><a href="contact.html">contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="hamburger hamburger--spring" type="button">
+        <div class="burger" aria-label="Mobile hamburger menu">
+          <button
+            class="hamburger hamburger--spring"
+            type="button"
+            aria-label="Mobile hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -56,41 +56,69 @@
       </nav>
     </header>
     <main>
-      <h1 class="single-project-heading animated fadeInLeft">
-        Enviro Fireplaces Product Brochures
+      <h1 class="project-page-title">
+        Enviro Fireplaces Product Booklets
       </h1>
-      <article class="single-design-project">
+      <article class="project-details">
         <p class="project-description">
-          These brochures were essential to the annual fireplace conferance that
-          the engineering team and Vice-president attended. The brochures set
+          These brochures were essential to the annual fireplace conference that
+          the engineering team and vice-president attended. The brochures set
           forth the quality of the brand and showcased new products.
         </p>
-        <img src="assets/images/enviroCSeriesBrochure.jpg" alt="" />
-        <img src="assets/images/enviroCSeriesBrochureInside.jpg" alt="" />
-        <img src="assets/images/enviroCSeriesBrochureInside2.jpg" alt="" />
-        <img src="assets/images/enviroGSeriesBrochure.jpg" alt="" />
-        <img src="assets/images/enviroGasFireplacesBrochure.jpg" alt="" />
+        <img
+          src="assets/images/enviroCSeriesBrochure.jpg"
+          alt="Enviro Fireplaces C Series product booklet mockup on a white wood floor"
+        />
+        <img
+          src="assets/images/enviroCSeriesBrochureInside.jpg"
+          alt="Fireplace features page from the Enviro Fireplace C Series product booklet"
+        />
+        <img
+          src="assets/images/enviroCSeriesBrochureInside2.jpg"
+          alt="Specifications page from the Enviro Fireplace C Series product booklet"
+        />
+        <img
+          src="assets/images/enviroGSeriesBrochure.jpg"
+          alt="Enviro Fireplaces G Series product booklet mockup on a brown background"
+        />
+        <img
+          src="assets/images/enviroGasFireplacesBrochure.jpg"
+          alt="Enviro Fireplaces Gas Inserts product booklet mockup on an off white background"
+        />
       </article>
-      <aside class="design-projects-backlink">
-        <a href="index.html"> <i class="far fa-arrow-alt-circle-left"></i></a>
-        <p><a href="work.html">Back to Projects</a></p>
-      </aside>
+      <section class="view-all-projects">
+        <a href="designWork.html">
+          <i
+            class="far fa-arrow-alt-circle-left"
+            alt="Arrow inside a circle outline icon"
+          ></i
+        ></a>
+        <p><a href="designWork.html">View all Design Work</a></p>
+      </section>
     </main>
     <footer>
       <section class="contact-info">
-        <div class="social-icons">
-          <a href="https://github.com/karlapaulina"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/karlottagonzalez/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
+        <ul class="social-media-icons">
+          <li>
+            <a
+              href="https://github.com/karlapaulina"
+              aria-label="Link to Karla's Github profile"
+              ><i class="fab fa-github" alt="Github Icon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/karlottagonzalez/"
+              aria-label="Link to Karla's LinkedIn profile"
+              ><i class="fab fa-linkedin-in" alt="LinkedIn Icon"></i
+            ></a>
+          </li>
+        </ul>
         <p>
           hello[@]karlottagonzalez[dot]com
         </p>
       </section>
-      <section class="madeBy">
+      <section class="copyright">
         <p>Made by Karla Gonzalez &copy; 2019</p>
       </section>
     </footer>

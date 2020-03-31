@@ -1,50 +1,50 @@
 $(document).ready(function() {
   const allButton = $(".allBtn");
-  const webButton = $(".webBtn");
+  const digitalButton = $(".digitalBtn");
   const printButton = $(".printBtn");
   const productButton = $(".productBtn");
 
-  const webItems = $(".web");
+  const digitalItems = $(".digital");
   const printItems = $(".print");
   const productItems = $(".product-photo-vid");
   const allItems = $(".all");
 
   $(allButton).click(function() {
-    $(webButton).removeClass("active");
+    $(digitalButton).removeClass("active");
     $(printButton).removeClass("active");
     $(productButton).removeClass("active");
     $(allButton).addClass("active");
-    $(allItems).appendTo(".design-portfolio");
+    $(allItems).appendTo(".portfolio");
   });
 
-  $(webButton).click(function() {
+  $(digitalButton).click(function() {
     $(allButton).removeClass("active");
     $(printButton).removeClass("active");
     $(productButton).removeClass("active");
-    $(webButton).addClass("active");
+    $(digitalButton).addClass("active");
     $(printItems).remove();
     $(productItems).remove();
-    $(webItems).appendTo(".design-portfolio");
+    $(digitalItems).appendTo(".portfolio");
   });
 
   $(printButton).click(function() {
     $(allButton).removeClass("active");
-    $(webButton).removeClass("active");
+    $(digitalButton).removeClass("active");
     $(productButton).removeClass("active");
     $(printButton).addClass("active");
-    $(webItems).remove();
+    $(digitalItems).remove();
     $(productItems).remove();
-    $(printItems).appendTo(".design-portfolio");
+    $(printItems).appendTo(".portfolio");
   });
 
   $(productButton).click(function() {
     $(allButton).removeClass("active");
     $(printButton).removeClass("active");
-    $(webButton).removeClass("active");
+    $(digitalButton).removeClass("active");
     $(productButton).addClass("active");
-    $(webItems).remove();
+    $(digitalItems).remove();
     $(printItems).remove();
-    $(productItems).appendTo(".design-portfolio");
+    $(productItems).appendTo(".portfolio");
   });
 
   const navSlide = () => {

@@ -18,10 +18,6 @@
     <link href="./build/css/style.min.css" type="text/css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
@@ -31,23 +27,27 @@
   <body>
     <header>
       <nav>
-        <div class="kg-logo">
+        <div class="kg-logo" role="link" tabindex="0">
           <a href="index.html" class="logo"
             ><img
-              src="assets/images/kg_logo_dark.svg"
-              alt="Karla Gonzalez Icon Logo"
+              src="assets/images/kg_logo_light.svg"
+              alt="Karla Gonzalez Monogram Logo"
           /></a>
         </div>
         <ul class="nav-links">
           <li class="link-item">
             <a href="https://github.com/karlapaulina">github</a>
           </li>
-          <li class="link-item"><a href="work.html">design</a></li>
-          <li class="link-item"><a href="about.html">about</a></li>
+          <li class="link-item"><a href="devWork.html">dev work</a></li>
+          <li class="link-item"><a href="designWork.html">design work</a></li>
           <li class="link-item"><a href="contact.html">contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="hamburger hamburger--spring" type="button">
+        <div class="burger" aria-label="Mobile hamburger menu">
+          <button
+            class="hamburger hamburger--spring"
+            type="button"
+            aria-label="Mobile hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -56,47 +56,98 @@
       </nav>
     </header>
     <main>
-      <h1 class="single-project-heading animated fadeInLeft">
+      <h1 class="project-page-title">
         Product Photography
       </h1>
-      <article class="single-design-project">
+      <article class="project-details">
         <p class="project-description">
           During my time with Planet of Sound, there was often a lack of variety
           in official images from the high-end products the shop carried. I had
           access to a small studio with studio lights where I was able to shoot
           products for the shop website and social media platforms.
         </p>
-        <img src="assets/images/debutCarbonTurntable.jpg" alt="" />
-        <img src="assets/images/posAccuphase.jpg" alt="" />
-        <img src="assets/images/conceptCarbonFibreBrush.jpg" alt="" />
-        <img src="assets/images/posRecordOrnament.jpg" alt="" />
-        <img src="assets/images/posOrnamentCloseUp.jpg" alt="" />
-        <img src="assets/images/miesBananaPlugs.jpg" alt="" />
-        <img src="assets/images/miesHeadphones.jpg" alt="" />
-        <img src="assets/images/miesRecordKit.jpg" alt="" />
-        <img src="assets/images/miesSpeakerSpadesLifestyle.jpg" alt="" />
-        <img src="assets/images/miese300Earphones.jpg" alt="" />
+        <img
+          src="assets/images/posStabiLifestyle.jpg"
+          alt="Stabi turntable on top of a colourful cloth in front of a Muddy Waters vinyl, next to a house plant and candles on a teak shelf against white concrete"
+        />
+        <img
+          src="assets/images/debutCarbonTurntable.jpg"
+          alt="Red Debut Carbon turntable with a black vinyl record on a white background"
+        />
+        <img
+          src="assets/images/posMooMat.jpg"
+          alt="White and Black MooMat on a red Debut Carbon turtntable"
+        />
+        <img
+          src="assets/images/posAccuphase.jpg"
+          alt="Accuphase amplifier with the remote on top against a white background"
+        />
+        <img
+          src="assets/images/conceptCarbonFibreBrush.jpg"
+          alt="Concept Carbon fibre brush on a white background"
+        />
+        <img
+          src="assets/images/posRecordOrnament.jpg"
+          alt="Planet of Sound's Vinyl Record ornament with a red tie on a small black bag against a white background"
+        />
+        <img
+          src="assets/images/posOrnamentCloseUp.jpg"
+          alt="Planet of Sound ornament hanging on a Christmas tree"
+        />
+        <img
+          src="assets/images/miesBananaPlugs.jpg"
+          alt="Mies Banana plugs against a whtie background"
+        />
+        <img
+          src="assets/images/miesHeadphones.jpg"
+          alt="Mies bluetooth Headphones next to an iPhone against a white background"
+        />
+        <img
+          src="assets/images/miesRecordKit.jpg"
+          alt="Mies Record Kit against a white background"
+        />
+        <img
+          src="assets/images/miesSpeakerSpadesLifestyle.jpg"
+          alt="Mies Speaker spades being used on a speaker"
+        />
+        <img
+          src="assets/images/miese300Earphones.jpg"
+          alt="Mies 300E earphones against a white background"
+        />
       </article>
-      <aside class="design-projects-backlink">
-        <a href="index.html"> <i class="far fa-arrow-alt-circle-left"></i></a>
-        <p><a href="work.html">Back to Projects</a></p>
-      </aside>
+      <section class="view-all-projects">
+        <a href="designWork.html">
+          <i
+            class="far fa-arrow-alt-circle-left"
+            alt="Arrow inside a circle outline icon"
+          ></i
+        ></a>
+        <p><a href="designWork.html">View all Design Work</a></p>
+      </section>
     </main>
     <footer>
       <section class="contact-info">
-        <div class="social-icons">
-          <a href="https://github.com/karlapaulina"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/karlottagonzalez/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
+        <ul class="social-media-icons">
+          <li>
+            <a
+              href="https://github.com/karlapaulina"
+              aria-label="Link to Karla's Github profile"
+              ><i class="fab fa-github" alt="Github Icon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/karlottagonzalez/"
+              aria-label="Link to Karla's LinkedIn profile"
+              ><i class="fab fa-linkedin-in" alt="LinkedIn Icon"></i
+            ></a>
+          </li>
+        </ul>
         <p>
           hello[@]karlottagonzalez[dot]com
         </p>
       </section>
-      <section class="madeBy">
+      <section class="copyright">
         <p>Made by Karla Gonzalez &copy; 2019</p>
       </section>
     </footer>

@@ -18,10 +18,6 @@
     <link href="./build/css/style.min.css" type="text/css" rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
-    <link
-      rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
@@ -31,23 +27,27 @@
   <body>
     <header>
       <nav>
-        <div class="kg-logo">
+        <div class="kg-logo" role="link" tabindex="0">
           <a href="index.html" class="logo"
             ><img
-              src="assets/images/kg_logo_dark.svg"
-              alt="Karla Gonzalez Icon Logo"
+              src="assets/images/kg_logo_light.svg"
+              alt="Karla Gonzalez Monogram Logo"
           /></a>
         </div>
         <ul class="nav-links">
           <li class="link-item">
             <a href="https://github.com/karlapaulina">github</a>
           </li>
-          <li class="link-item"><a href="work.html">design</a></li>
-          <li class="link-item"><a href="about.html">about</a></li>
+          <li class="link-item"><a href="devWork.html">dev work</a></li>
+          <li class="link-item"><a href="designWork.html">design work</a></li>
           <li class="link-item"><a href="contact.html">contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="hamburger hamburger--spring" type="button">
+        <div class="burger" aria-label="Mobile hamburger menu">
+          <button
+            class="hamburger hamburger--spring"
+            type="button"
+            aria-label="Mobile hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -56,52 +56,79 @@
       </nav>
     </header>
     <main>
-      <h1 class="single-project-heading animated fadeInLeft">
+      <h1 class="project-page-title">
         Pure Pressure Tapes
       </h1>
-      <article class="single-design-project">
+      <article class="project-details">
         <p class="project-description">
           A collaborative between myself, the band’s guitarist, and a friend of
-          the band as well. They spray painted the stencile and I photographed
+          the band as well. They spray painted the stencil and I photographed
           the board, changed the colouring to grey scale, and then added the
           track listing, and formatted the set up to fit a standard cassette
           tape case. I designed and composed the insert, adding a crumpled paper
-          effect within Photoshop to further enhance the DIY aesthetic. Please
+          effect within Photoshop to further enhance the DIY aesthetic. (Please
           note the dotted lines are only shown in this example to demonstrate
-          where the cover would be creased, and not in the actual proof used.
-        </p>
-        <img src="assets/images/ppDemoCover.jpg" alt="" />
-        <img src="assets/images/ppDemoInsert.jpg" alt="" />
-        <img src="assets/images/ppDemoTape.jpg" alt="" />
-        <p class="project-description">
+          where the cover would be creased, and not in the actual proof used.)
+          <br role="presentation" />
+          <br role="presentation" />
           Promo tape for the Relampago de Furia LP. Worked on the art and
           layout, including creating member polaroids. 30/30 release.
         </p>
-        <img src="assets/images/ppTidesTapeCover.jpg" alt="" />
-        <img src="assets/images/ppTidesTapeInsert.jpg" alt="" />
-        <img src="assets/images/ppTidesTapeOpen.jpg" alt="" />
-        <img src="assets/images/ppTidesTape.JPG" alt="" />
+        <img
+          src="assets/images/ppDemoCover.jpg"
+          alt="Pure Pressure demo tape cover"
+        />
+        <img
+          src="assets/images/ppDemoTape.jpg"
+          alt="Two Pure Pressure demo tapes displaying the front and back of the case on a dark background"
+        />
+        <img
+          src="assets/images/ppTidesTapeCover.jpg"
+          alt="Pure Pressure Tides tape cover"
+        />
+        <img
+          src="assets/images/ppTidesTapeInsert.jpg"
+          alt="Pure Pressure Tides Tape insert"
+        />
+        <img
+          src="assets/images/ppTidesTapeOpen.jpg"
+          class="singleImage"
+          alt="Pure Pressure Tides tape case, blue cassette, and insert laid out on an orange table"
+        />
       </article>
-      <aside class="design-projects-backlink">
-        <a href="index.html"> <i class="far fa-arrow-alt-circle-left"></i></a>
-        <p><a href="work.html">Back to Projects</a></p>
-      </aside>
+      <section class="view-all-projects">
+        <a href="designWork.html">
+          <i
+            class="far fa-arrow-alt-circle-left"
+            alt="Arrow inside a circle outline icon"
+          ></i
+        ></a>
+        <p><a href="designWork.html">View all Design Work</a></p>
+      </section>
     </main>
     <footer>
       <section class="contact-info">
-        <div class="social-icons">
-          <a href="https://github.com/karlapaulina"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/karlottagonzalez/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
+        <ul class="social-media-icons">
+          <li>
+            <a
+              href="https://github.com/karlapaulina"
+              aria-label="Link to Karla's Github profile"
+              ><i class="fab fa-github" alt="Github Icon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/karlottagonzalez/"
+              aria-label="Link to Karla's LinkedIn profile"
+              ><i class="fab fa-linkedin-in" alt="LinkedIn Icon"></i
+            ></a>
+          </li>
+        </ul>
         <p>
           hello[@]karlottagonzalez[dot]com
         </p>
       </section>
-      <section class="madeBy">
+      <section class="copyright">
         <p>Made by Karla Gonzalez &copy; 2019</p>
       </section>
     </footer>

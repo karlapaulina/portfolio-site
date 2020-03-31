@@ -13,13 +13,9 @@
     <meta name="author" content="Karla Gonzalez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--TITLE-->
-    <title>Karla Gonzalez</title>
+    <title>Karla Gonzalez Portfolio</title>
     <!--STYLESHEETS-->
     <link href="./build/css/style.min.css" type="text/css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -31,23 +27,27 @@
   <body>
     <header>
       <nav>
-        <div class="kg-logo">
+        <div class="kg-logo" role="link" tabindex="0">
           <a href="index.html" class="logo"
             ><img
-              src="assets/images/kg_logo_dark.svg"
-              alt="Karlotta Gonzalez home"
+              src="assets/images/kg_logo_light.svg"
+              alt="Karla Gonzalez Monogram Logo"
           /></a>
         </div>
         <ul class="nav-links">
           <li class="link-item">
             <a href="https://github.com/karlapaulina">github</a>
           </li>
-          <li class="link-item"><a href="work.html">design</a></li>
-          <li class="link-item"><a href="about.html">about</a></li>
+          <li class="link-item"><a href="devWork.html">dev work</a></li>
+          <li class="link-item"><a href="designWork.html">design work</a></li>
           <li class="link-item"><a href="contact.html">contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="hamburger hamburger--spring" type="button">
+        <div class="burger" aria-label="Mobile hamburger menu">
+          <button
+            class="hamburger hamburger--spring"
+            type="button"
+            aria-label="Mobile hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -56,93 +56,88 @@
       </nav>
     </header>
     <main>
-      <h1 class="homeTitle animated flipInX delay-.5s">Front-End Projects</h1>
-      <article class="dev-portfolio">
-        <figure class="dev-portfolio-first-item">
-          <a href="starts-with-me.html"
-            ><img
-              src="assets/images/swmDesktopMockup.jpg"
-              alt="Starts With Me website desktop mockup"
-          /></a>
-          <div class="middle">
-            <figcaption class="dev-portfolio-item-title">
-              Starts with Me
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="dev-portfolio-second-item">
-          <a href="inhabitent-clothing-supply.html"
-            ><img
-              src="assets/images/inhabitentDesktopMockupCover.jpg"
-              alt="Inhabitent Clothing Supply website desktop mockup"
-          /></a>
-          <div class="middle">
-            <figcaption class="dev-portfolio-item-title">
-              Inhabitent Clothing Supply
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="dev-portfolio-third-item">
-          <a href="aloha-clothing.html"
-            ><img
-              src="assets/images/alohaClothingDesktopMockup.jpg"
-              alt="Aloha Clothing website desktop mockup"
-          /></a>
-          <div class="middle">
-            <figcaption class="dev-portfolio-item-title">
-              Aloha Clothing Co.
-            </figcaption>
-          </div>
-        </figure>
-        <figure class="dev-portfolio-fourth-item">
-          <a href="instanews.html"
-            ><img
-              src="assets/images/instanewsDesktopMockup.jpg"
-              alt="InstaNews website desktop mockup"
-          /></a>
-          <div class="middle">
-            <figcaption class="dev-portfolio-item-title">InstaNews</figcaption>
-          </div>
-        </figure>
-        <figure class="dev-portfolio-fifth-item">
-          <a href="pong-game.html"
-            ><img
-              src="assets/images/pongGameDesktopMockup.jpg"
-              alt="Pong Game website desktop mockup"
-          /></a>
-          <div class="middle">
-            <figcaption class="dev-portfolio-item-title">Pong Game</figcaption>
-          </div>
-        </figure>
-        <figure class="dev-portfolio-sixth-item">
-          <a href="quotes-on-dev.html"
-            ><img
-              src="assets/images/qodDesktopMockup.jpg"
-              alt="Quotes on Dev website desktop mockup "
-          /></a>
-          <div class="middle">
-            <figcaption class="dev-portfolio-item-title">
-              Quotes on Dev
-            </figcaption>
-          </div>
-        </figure>
+      <article class="about-me">
+        <section class="about-me-photo">
+          <img
+            src="assets/images/karlaProfile.jpg"
+            alt="Portrait of Karla Gonzalez outside against beige and blue wall"
+          />
+          <div class="photoBackground" role="presentation"></div>
+          <h1>Junior Front-End Developer & Graphic Designer</h1>
+        </section>
+        <p class="bio">
+          With my professional Graphic Design background, I bring a deep
+          understanding of User Experience and User interface to coding projects
+          that is often lacking from developers. I believe Accessibility is a
+          key component and that you should code for all types of users.
+          <br role="presentation" />
+          <br role="presentation" />
+          In previous roles, I have created consistent and strong design for
+          digital and print branding/promotional materials, enhanced user
+          experiences and interfaces on e-commerce websites and internal CMS,
+          and produced original photo and video for social media platforms.
+          <br role="presentation" />
+          <br role="presentation" />
+          I have recently started working with REACT and am currently learning
+          to work with Bootstrap and GSAP.
+        </p>
+        <aside class="skills">
+          <h2>My skills include...</h2>
+          <ul aria-label="List of my skills">
+            <li>HTML5</li>
+            <li>CSS3 & SASS</li>
+            <li>AJAX & JSON</li>
+            <li>ES6 & jQuery</li>
+            <li>NPM</li>
+            <li>Version Control</li>
+            <li>Gulp and Webpack</li>
+            <li>PHP</li>
+            <li>Slack</li>
+            <li>DSLR Cameras</li>
+            <li>Adobe XD & Balsamiq</li>
+            <li>Illustrator, Photoshop, & InDesign</li>
+            <li>Premire Pro & After Effects</li>
+            <li>Fluent English & Spanish</li>
+            <li>Conversational French</li>
+          </ul>
+        </aside>
+        <aside class="interests">
+          <h2>A few of my favourites...</h2>
+          <ul aria-label="List of my favourite things">
+            <li>Boxing</li>
+            <li>Vegan food</li>
+            <li>Americanos</li>
+            <li>Kombucha</li>
+            <li>Film Cameras</li>
+            <li>Criteron Collection</li>
+            <li>Colour-coded lists</li>
+          </ul>
+        </aside>
       </article>
     </main>
     <footer>
       <section class="contact-info">
-        <div class="social-icons">
-          <a href="https://github.com/karlapaulina"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/karlottagonzalez/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
+        <ul class="social-media-icons">
+          <li>
+            <a
+              href="https://github.com/karlapaulina"
+              aria-label="Link to Karla's Github profile"
+              ><i class="fab fa-github" alt="Github Icon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/karlottagonzalez/"
+              aria-label="Link to Karla's LinkedIn profile"
+              ><i class="fab fa-linkedin-in" alt="LinkedIn Icon"></i
+            ></a>
+          </li>
+        </ul>
         <p>
           hello[@]karlottagonzalez[dot]com
         </p>
       </section>
-      <section class="madeBy">
+      <section class="copyright">
         <p>Made by Karla Gonzalez &copy; 2019</p>
       </section>
     </footer>

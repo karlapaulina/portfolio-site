@@ -13,13 +13,9 @@
     <meta name="author" content="Karla Gonzalez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--TITLE-->
-    <title>Pong Game</title>
+    <title>Pong Game Project</title>
     <!--STYLESHEETS-->
     <link href="./build/css/style.min.css" type="text/css" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
-    />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -31,23 +27,27 @@
   <body>
     <header>
       <nav>
-        <div class="kg-logo">
+        <div class="kg-logo" role="link" tabindex="0">
           <a href="index.html" class="logo"
             ><img
-              src="assets/images/kg_logo_dark.svg"
-              alt="Karla Gonzalez Icon Logo"
+              src="assets/images/kg_logo_light.svg"
+              alt="Karla Gonzalez Monogram Logo"
           /></a>
         </div>
         <ul class="nav-links">
           <li class="link-item">
             <a href="https://github.com/karlapaulina">github</a>
           </li>
-          <li class="link-item"><a href="work.html">design</a></li>
-          <li class="link-item"><a href="about.html">about</a></li>
+          <li class="link-item"><a href="devWork.html">dev work</a></li>
+          <li class="link-item"><a href="designWork.html">design work</a></li>
           <li class="link-item"><a href="contact.html">contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="hamburger hamburger--spring" type="button">
+        <div class="burger" aria-label="Mobile hamburger menu">
+          <button
+            class="hamburger hamburger--spring"
+            type="button"
+            aria-label="Mobile hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -56,10 +56,10 @@
       </nav>
     </header>
     <main>
-      <h1 class="single-project-heading animated fadeInLeft">
+      <h1 class="project-page-title">
         Pong Game
       </h1>
-      <article class="single-dev-project">
+      <article class="project-details">
         <p class="project-description">
           A modern Javascript pong game. This was my time working with SVGs and
           being fully immersed in Javascript with minimal HTML5 and CSS3. This
@@ -71,29 +71,37 @@
         </video>
         <img
           src="assets/images/pongGameDesktopMockup.jpg"
-          alt="Pong Game website desktop mockup"
+          alt="Pong Game website mockup on an iMac screen next to a black speaker, keyboard, mouse and mousepad, and house plant on a white desk against a white wall."
         />
       </article>
-      <aside class="dev-projects-backlink">
-        <a href="index.html"> <i class="far fa-arrow-alt-circle-left"></i></a>
-        <p><a href="index.html">Back to Projects</a></p>
-      </aside>
+      <section class="view-all-projects">
+        <a href="devWork.html"> <i class="far fa-arrow-alt-circle-left"></i></a>
+        <p><a href="devWork.html">View all Dev Work</a></p>
+      </section>
     </main>
     <footer>
       <section class="contact-info">
-        <div class="social-icons">
-          <a href="https://github.com/karlapaulina"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/karlottagonzalez/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
+        <ul class="social-media-icons">
+          <li>
+            <a
+              href="https://github.com/karlapaulina"
+              aria-label="Link to Karla's Github profile"
+              ><i class="fab fa-github" alt="Github Icon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/karlottagonzalez/"
+              aria-label="Link to Karla's LinkedIn profile"
+              ><i class="fab fa-linkedin-in" alt="LinkedIn Icon"></i
+            ></a>
+          </li>
+        </ul>
         <p>
           hello[@]karlottagonzalez[dot]com
         </p>
       </section>
-      <section class="madeBy">
+      <section class="copyright">
         <p>Made by Karla Gonzalez &copy; 2019</p>
       </section>
     </footer>

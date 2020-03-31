@@ -1,23 +1,21 @@
 // Structure
 
 $base__space-unit: 1.5rem;
-$solid_border-light: 0.8px solid #cc9550;
-$solid_border-dark: 0.8px solid #333333;
+$solid_border-light: 1px solid #8c4227;
+$solid_border-dark: 1px solid #fff;
 $base__font-size: 16px;
 $base__letter-spacing: 2px;
 $base__heading-spacing: 5px;
 
 // Colors
 
-$color__background-body: #fff;
-$color__brand-darkgrey: #333333;
-$color__brand-mediumgrey: #3d3d3d;
-$color__brand-grey: #c1562f;
-$color__brand-lightgrey: #8c4227;
-$color__brand-offwhite: #ffffff;
-
-$color__link: $color__brand-darkgrey;
-$color__link-visited: $color__brand-grey;
+$color__dark-grey: #1f1f1f;
+$color__light-grey: #8a8a8a;
+$color__accent-dark-bg: #d16842;
+$color__accent-light-bg: #c1562f;
+$color__gold-dark-bg: #d0a062;
+$color__red-light-bg: #8c4227;
+$color__white: #ffffff;
 
 // Typography
 

@@ -13,7 +13,7 @@
     <meta name="author" content="Karla Gonzalez" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--TITLE-->
-    <title>InstaNews</title>
+    <title>InstaNews Project</title>
     <!--STYLESHEETS-->
     <link href="./build/css/style.min.css" type="text/css" rel="stylesheet" />
     <link
@@ -31,23 +31,27 @@
   <body>
     <header>
       <nav>
-        <div class="kg-logo">
+        <div class="kg-logo" role="link" tabindex="0">
           <a href="index.html" class="logo"
             ><img
-              src="assets/images/kg_logo_dark.svg"
-              alt="Karla Gonzalez Icon Logo"
+              src="assets/images/kg_logo_light.svg"
+              alt="Karla Gonzalez Monogram Logo"
           /></a>
         </div>
         <ul class="nav-links">
           <li class="link-item">
             <a href="https://github.com/karlapaulina">github</a>
           </li>
-          <li class="link-item"><a href="work.html">design</a></li>
-          <li class="link-item"><a href="about.html">about</a></li>
+          <li class="link-item"><a href="devWork.html">dev work</a></li>
+          <li class="link-item"><a href="designWork.html">design work</a></li>
           <li class="link-item"><a href="contact.html">contact</a></li>
         </ul>
-        <div class="burger">
-          <button class="hamburger hamburger--spring" type="button">
+        <div class="burger" aria-label="Mobile hamburger menu">
+          <button
+            class="hamburger hamburger--spring"
+            type="button"
+            aria-label="Mobile hamburger menu"
+          >
             <span class="hamburger-box">
               <span class="hamburger-inner"></span>
             </span>
@@ -56,8 +60,8 @@
       </nav>
     </header>
     <main>
-      <h1 class="single-project-heading animated fadeInLeft">InstaNews</h1>
-      <article class="single-dev-project">
+      <h1 class="project-page-title">InstaNews</h1>
+      <article class="project-details">
         <p class="project-description">
           This is a one-page, responsive website that allows a user to filter
           through top news story categories via the NYT API. This was my first
@@ -65,42 +69,51 @@
           reinforced knowledge in HTML5, CSS3, jQuery, and also helped me style
           more proficently with the introduction of SASS.
         </p>
-        <video width="100%" controls>
+        <video width="100%" controls class="singleVideo">
           <source src="assets/videos/instanewsDesktop.mp4" type="video/mp4" />
         </video>
         <img
-          src="assets/images/instanewsDesktopMockup.jpg"
-          alt="InstaNews website desktop mockup"
-        />
-        <img
           src="assets/images/instanewsIpadMockup.jpg"
-          alt="InstaNews website iPad mockup"
+          alt="InstaNews website mockup on an iPad screen on a grey mat next to a pair of airpods and a stylus on a white desk"
         />
         <img
           src="assets/images/instanewsSmartphoneMockup.jpg"
-          alt="InstaNews website smartphone mockup"
+          alt="InstaNews website mockup on an iPhone screen next to a white laptop on a white desk"
         />
       </article>
-      <aside class="dev-projects-backlink">
-        <a href="index.html"> <i class="far fa-arrow-alt-circle-left"></i></a>
-        <p><a href="index.html">Back to Projects</a></p>
-      </aside>
+      <section class="view-all-projects">
+        <a href="devWork.html">
+          <i
+            class="far fa-arrow-alt-circle-left"
+            alt="Arrow inside a circle outline icon"
+          ></i
+        ></a>
+        <p><a href="devWork.html">View all Dev Work</a></p>
+      </section>
     </main>
     <footer>
       <section class="contact-info">
-        <div class="social-icons">
-          <a href="https://github.com/karlapaulina"
-            ><i class="fab fa-github"></i
-          ></a>
-          <a href="https://www.linkedin.com/in/karlottagonzalez/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-        </div>
+        <ul class="social-media-icons">
+          <li>
+            <a
+              href="https://github.com/karlapaulina"
+              aria-label="Link to Karla's Github profile"
+              ><i class="fab fa-github" alt="Github Icon"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/karlottagonzalez/"
+              aria-label="Link to Karla's LinkedIn profile"
+              ><i class="fab fa-linkedin-in" alt="LinkedIn Icon"></i
+            ></a>
+          </li>
+        </ul>
         <p>
           hello[@]karlottagonzalez[dot]com
         </p>
       </section>
-      <section class="madeBy">
+      <section class="copyright">
         <p>Made by Karla Gonzalez &copy; 2019</p>
       </section>
     </footer>
